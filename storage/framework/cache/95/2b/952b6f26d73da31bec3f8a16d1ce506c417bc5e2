@@ -1,0 +1,48 @@
+1521855374a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:840:"==
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Autumn {{ this.page.title }}</title>
+	    <meta name="description" content="{{ this.page.meta_description }}">
+	    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/theme.css'|theme }}">
+	    {% styles %}
+	</head>
+	<body>
+		<header>
+			{% partial 'site/header' %}
+		</header>
+		<div class="container">
+			{% page %}
+		</div>
+		<footer>
+			{% partial 'site/footer' %}
+		</footer>
+		<script type="text/javascript" src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+		<script type="text/javascript" src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+		<script type="text/javascript" src="{{ 'assets/javascript/app.js'|theme }}"></script>
+	</body>
+</html>";s:5:"mtime";i:1521854522;s:6:"markup";s:836:"<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Autumn {{ this.page.title }}</title>
+	    <meta name="description" content="{{ this.page.meta_description }}">
+	    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/theme.css'|theme }}">
+	    {% styles %}
+	</head>
+	<body>
+		<header>
+			{% partial 'site/header' %}
+		</header>
+		<div class="container">
+			{% page %}
+		</div>
+		<footer>
+			{% partial 'site/footer' %}
+		</footer>
+		<script type="text/javascript" src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+		<script type="text/javascript" src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+		<script type="text/javascript" src="{{ 'assets/javascript/app.js'|theme }}"></script>
+	</body>
+</html>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

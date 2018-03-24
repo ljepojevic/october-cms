@@ -1,0 +1,25 @@
+==
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Autumn {{ this.page.title }}</title>
+	    <meta name="description" content="{{ this.page.meta_description }}">
+	    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/theme.css'|theme }}">
+	    {% styles %}
+	</head>
+	<body>
+		<header>
+			{% partial 'site/header' %}
+		</header>
+		<div class="container">
+			{% page %}
+		</div>
+		<footer>
+			{% partial 'site/footer' %}
+		</footer>
+		<script type="text/javascript" src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+		<script type="text/javascript" src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+		<script type="text/javascript" src="{{ 'assets/javascript/app.js'|theme }}"></script>
+	</body>
+</html>
