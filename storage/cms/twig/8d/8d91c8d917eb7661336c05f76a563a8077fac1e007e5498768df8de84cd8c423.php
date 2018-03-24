@@ -18,7 +18,12 @@ class __TwigTemplate_9c62b329bd07b437b8d27cdcfc3e805b1db3f06b09c3ca5beeb5f416411
         // line 1
         echo "<h1>About us</h1>
 <p>This is About page</p>
-<hr>";
+<hr>
+";
+        // line 4
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("resourcesLinks"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
     }
 
     public function getTemplateName()
@@ -26,15 +31,21 @@ class __TwigTemplate_9c62b329bd07b437b8d27cdcfc3e805b1db3f06b09c3ca5beeb5f416411
         return "C:\\xampp\\htdocs\\train-codes\\Gitting\\cms/themes/autumn/pages/about.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  24 => 4,  19 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("<h1>About us</h1>
 <p>This is About page</p>
-<hr>", "C:\\xampp\\htdocs\\train-codes\\Gitting\\cms/themes/autumn/pages/about.htm", "");
+<hr>
+{% component 'resourcesLinks' %}", "C:\\xampp\\htdocs\\train-codes\\Gitting\\cms/themes/autumn/pages/about.htm", "");
     }
 }
