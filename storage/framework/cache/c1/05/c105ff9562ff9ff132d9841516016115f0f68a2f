@@ -1,13 +1,17 @@
-1521855434a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:367:"	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom box-shadow">
+1521856890a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:780:"	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom box-shadow">
       <h5 class="my-0 mr-md-auto font-weight-normal">{{ this.theme.site_name }}</h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Home</a>
-        <a class="p-2 text-dark" href="#">Contact</a>
+        <a class="p-2 text-dark {% if this.page.id == 'home' %}font-weight-bold{% endif %}" href="{{ 'home'|page }}">Home</a>
+        <a class="p-2 text-dark {% if this.page.id == 'blog' %}font-weight-bold{% endif %}" href="{{ 'blog'|page }}">Blog</a>
+        <a class="p-2 text-dark {% if this.page.id == 'about' %}font-weight-bold{% endif %}" href="{{ 'about'|page }}">About</a>
+        <a class="p-2 text-dark {% if this.page.id == 'contact' %}font-weight-bold{% endif %}" href="{{ 'contact'|page }}">Contact</a>
       </nav>
-    </div>";s:5:"mtime";i:1521854829;s:6:"markup";s:366:"<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom box-shadow">
+    </div>";s:5:"mtime";i:1521856112;s:6:"markup";s:779:"<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom box-shadow">
       <h5 class="my-0 mr-md-auto font-weight-normal">{{ this.theme.site_name }}</h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Home</a>
-        <a class="p-2 text-dark" href="#">Contact</a>
+        <a class="p-2 text-dark {% if this.page.id == 'home' %}font-weight-bold{% endif %}" href="{{ 'home'|page }}">Home</a>
+        <a class="p-2 text-dark {% if this.page.id == 'blog' %}font-weight-bold{% endif %}" href="{{ 'blog'|page }}">Blog</a>
+        <a class="p-2 text-dark {% if this.page.id == 'about' %}font-weight-bold{% endif %}" href="{{ 'about'|page }}">About</a>
+        <a class="p-2 text-dark {% if this.page.id == 'contact' %}font-weight-bold{% endif %}" href="{{ 'contact'|page }}">Contact</a>
       </nav>
     </div>";s:4:"code";N;}}
